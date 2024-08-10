@@ -1,0 +1,106 @@
+:root {
+    --background-main-color: #f8fafc;
+    --background-secondary-color: #d6eaf8;
+    --text-main-color: #2c3e50;
+    --text-secondary-color: #5d6d7e;
+    --input-color: #ffffff;
+    --button-background-color: #5dade2;
+    --button-background-hover-color: #3498db;
+    --button-text-color: #ffffff;
+    --line-color: #aab7c4;
+}
+
+body {
+    background-color: var(--background-main-color);
+    color: var(--text-main-color);
+    font-size: 2.4vh;
+    font-family: 'Calibri';
+}
+
+header {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header p {
+    margin: 0.4vh 0;
+}
+
+header h1 {
+    font-size: 4vh;
+    margin: 0;
+}
+
+#auth-sections {
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 80%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.auth-section {
+    width: 40vw;
+    height: auto;
+    margin: 0 2vw;
+    padding: 2vh 2vw;
+    text-align: center;
+    background-color: var(--background-secondary-color);
+}
+
+.auth-section h1{
+    font-size: 3.6vh;
+}
+
+.auth-section p{
+    margin: 3.6vh 0;
+}
+
+.auth-section a{
+    text-decoration: none;
+}
+
+.auth-section input{
+    width: 80%;
+    font-size: 2.4vh;
+}
+
+.auth-section input::placeholder{
+    color: var(--text-secondary-color);
+}
+
+.auth-section input:focus{
+    outline: none;
+}
+
+.auth-section input[type="text"],
+.auth-section input[type="password"]{
+    height: 4.2vh;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--text-main-color);
+    color: var(--text-main-color);
+}
+
+.auth-section input[type="button"]{
+    height: 6vh;
+    color: var(--button-text-color);
+    border: 1px solid var(--line-color);
+    background-color: var(--button-background-color);
+    transition: ease 0.25s;
+}
+
+.auth-section input[type="button"]:hover{
+    cursor: pointer;
+    background-color: var(--button-background-hover-color);
+}

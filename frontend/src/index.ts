@@ -1,3 +1,5 @@
 alert('!');
 
-console.log('vds');
+function a() {
+    console.log('vds');
+}
